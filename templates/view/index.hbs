@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+h3{
+  left: 10%;
+  top: 5%;
+  position: absolute;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.column {
+  float: left;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+  {{>navbar}}
+
+<h2>A Demo Website</h2>
+<h3>Created by Kishor KC</h3>
+<p>This picture taken from unsplash site</p>
+
+<div class="row">
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1606831629638-7f414ca2bc0e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Snow">
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1605025172647-e6f9ee58f711?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80" alt="Forest">
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1572803659590-cfa11f8e465b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Mountains">
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1604396576503-80fc493a9133?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Mountains">
+  </div>
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1606935591961-18d551c44d2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
+  </div>
+ 
+</div>
+
+
+</body>
+</html>
